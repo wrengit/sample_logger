@@ -1,11 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.2/css/bulma.min.css"
+      integrity="sha512-byErQdWdTqREz6DLAA9pCnLbdoGGhXfU6gm1c8bkf7F51JVmUBlayGe2A31VpXWQP+eiJ3ilTAZHCR3vmMyybA=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="columns">
+      <div class="column">
+        <form action="" class="box">
+          <div class="field">
+            <label class="label">Sample description</label>
+            <div class="control">
+              <input
+                class="input"
+                type="text"
+                placeholder="Enter the sample name and/or description"
+              />
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label">Chemist Email</label>
+            <div class="control">
+              <input
+                type="email"
+                class="input"
+                placeholder="Example: first.last@veolia.com"
+              />
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label">Customer / Sales Rep Name</label>
+            <div class="control">
+              <input
+                type="text"
+                class="input"
+                placeholder="Customer or Rep Name"
+              />
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label">Date Received</label>
+            <div class="control">
+              <input type="date" class="input" />
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label">Test Required</label>
+            <div class="control">
+              <textarea
+                class="textarea"
+                placeholder="Detail testing required"
+              ></textarea>
+            </div>
+          </div>
+          
+          <div class="field">
+            <label class="label">Additional Info</label>
+            <div class="control">
+              <textarea
+                class="textarea"
+                placeholder="Additional Information"
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="field">
+            <div class="control">
+              <button class="button">Add Sample</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="column">
+        <h1>Hello</h1>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.8.0/alpine.js"></script>
 </html>
