@@ -12,122 +12,144 @@
     />
   </head>
   <body>
-    <div class="columns">
-      <div class="column">
-        <form action="" class="box">
-          <div class="field">
-            <label class="label">Sample Description</label>
-            <div class="control has-icons-left">
-              <input
-                class="input"
-                type="text"
-                placeholder="Enter the sample name and/or description"
-              />
-              <span class="icon is-left">
-                <i class="fas fa-question"></i>
-              </span>
-            </div>
-          </div>
-
-          <div class="field is-grouped">
-            <div class="field-body">
-              <div class="field">
-                <label class="label">Chemist Email</label>
-                <div class="control has-icons-left">
-                  <input
-                    type="email"
-                    class="input"
-                    placeholder="Example: first.last@veolia.com"
-                  />
-                  <span class="icon is-small is-left">
-                    <i class="fas fa-envelope"></i>
-                  </span>
-                </div>
-              </div>
-
-              <div class="field">
-                <div class="control">
-                  <label class="label">Received Date</label>
-                  <input
-                    type="date"
-                    class="input"
-                    placeholder="Example: first.last@veolia.com"
-                  />
-                </div>
+    <div class="columns is-centered">
+      <div class="column is-half">
+        <section class="section">
+          <form action="" class="box">
+            <div class="field">
+              <label class="label">Sample Description</label>
+              <div class="control has-icons-left">
+                <input
+                  required
+                  class="input"
+                  type="text"
+                  placeholder="Enter the sample name and/or description"
+                />
+                <span class="icon is-left has-text-info">
+                  <i class="fas fa-question"></i>
+                </span>
               </div>
             </div>
-          </div>
 
-          <div class="field is-grouped">
-            <div class="field-body">
-              <div class="field">
-                <label class="label">Customer Name</label>
-                <div class="control has-icons-left">
-                  <input
-                    type="text"
-                    class="input"
-                    placeholder="Customer or Rep Name"
-                  />
-                  <span class="icon is-small is-left">
-                    <i class="fas fa-user"></i>
-                  </span>
-                </div>
-              </div>
-              <div class="field">
-                <label class="label">Customer Contact</label>
-                <div class="control has-icons-left">
-                  <input
-                    type="text"
-                    class="input"
-                    placeholder="Email or Phone Number"
-                  />
-                  <span class="icon is-small is-left">
-                    <i class="fas fa-id-card"></i>
-                  </span>
+            <div class="field is-grouped">
+              <div class="field-body">
+                <div class="field">
+                  <label class="label">Chemist Email</label>
+                  <div class="control has-icons-left">
+                    <input
+                      required
+                      type="email"
+                      class="input"
+                      placeholder="Example: first.last@veolia.com"
+                    />
+                    <span class="icon has-text-info is-small is-left">
+                      <i class="fas fa-envelope"></i>
+                    </span>
+                  </div>
                 </div>
 
+                <div class="field">
+                  <div class="control">
+                    <label class="label">Received Date</label>
+                    <input
+                      required
+                      type="date"
+                      class="input"
+                      placeholder="Example: first.last@veolia.com"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="field">
-            <label class="label">Test Required</label>
-            <div class="control has-icons-left">
-              <input
-                type="text"
-                class="input"
-                placeholder="eg. pH, flash test"
-              />
-              <span class="icon is-small is-left">
-                <i class="fas fa-vial"></i>
-              </span>
+            <div class="field is-grouped">
+              <div class="field-body">
+                <div class="field">
+                  <label class="label">Customer Name</label>
+                  <div class="control has-icons-left">
+                    <input
+                      required
+                      type="text"
+                      class="input"
+                      placeholder="Customer or Rep Name"
+                    />
+                    <span class="icon has-text-info is-small is-left">
+                      <i class="fas fa-user"></i>
+                    </span>
+                  </div>
+                </div>
+                <div class="field">
+                  <label class="label">Customer Contact</label>
+                  <div class="control has-icons-left">
+                    <input
+                      type="text"
+                      class="input"
+                      placeholder="Email or Phone Number"
+                    />
+                    <span class="icon has-text-info is-small is-left">
+                      <i class="fas fa-id-card"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
 
+            <div class="field">
+              <label class="label">Test Required</label>
+              <div class="control has-icons-left">
+                <input
+                  required
+                  type="text"
+                  class="input"
+                  placeholder="eg. pH, flash test"
+                />
+                <span class="icon has-text-info is-small is-left">
+                  <i class="fas fa-vial"></i>
+                </span>
+              </div>
+            </div>
 
-          <div class="field">
-            <label class="label">Additional Info</label>
-            <div class="control">
-              <textarea
-                class="textarea"
-                placeholder="Additional Information"
-              ></textarea>
+            <div class="field">
+              <label class="label">Additional Info</label>
+              <div class="control">
+                <textarea
+                  class="textarea"
+                  placeholder="Additional Information"
+                ></textarea>
+              </div>
             </div>
-          </div>
 
-          <div class="field is-grouped">
-            <div class="control">
-              <button class="button is-success">Add Sample</button>
+            <div class="field is-grouped">
+              <div class="control">
+                <button class="button is-success">Add Sample</button>
+              </div>
+              <div class="control">
+                <button class="button is-warning">Reset</button>
+              </div>
             </div>
-            <div class="control">
-              <button class="button is-warning">Reset</button>
-            </div>
-          </div>
-        </form>
+          </form>
+        </section>
       </div>
-      <div class="column">
-        
+      <div class="column is-half">
+        <section class="section">
+          <div class="table-container box">
+            <table class="table is-fullwidth is-hoverable">
+              <thead>
+                <tr>
+                  <th><abbr title="Sample Description">Description</abbr></th>
+                  <th><abbr title="Received on Date">Date</abbr></th>
+                  <th><abbr title="Customer Name">Customer</abbr></th>
+                  <th><abbr title="Test Required">Test</abbr></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
       </div>
+      <div class="column is-fullwidth"></div>
     </div>
     <script
       src="https://kit.fontawesome.com/51d7063a93.js"
