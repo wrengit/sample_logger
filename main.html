@@ -131,11 +131,13 @@
         </section>
       </div>
       <div class="column is-half">
-        <section class="section">
+        <section class="section pl-0">
           <div class="table-container box">
-            <table class="table is-fullwidth is-hoverable">
+            <table class="table is-fullwidth">
               <thead>
                 <tr>
+                  <th></th>
+                  <th></th>
                   <th><abbr title="Sample Description">Description</abbr></th>
                   <th><abbr title="Received on Date">Date</abbr></th>
                   <th><abbr title="Customer Name">Customer</abbr></th>
@@ -143,7 +145,26 @@
                 </tr>
               </thead>
               <tbody>
-                <tr></tr>
+                <tr>
+                  <th class="px-0">
+                    <div class="field is-grouped">
+                      <p class="control">
+                        <button class="button is-small is-rounded is-danger">
+                          <span class="icon">
+                            <i class="fas fa-trash-alt"></i>
+                          </span>
+                        </button>
+                      </p>
+                      <p class="control">
+                        <button class="button is-small is-rounded is-warning">
+                          <span class="icon">
+                            <i class="fas fa-edit"></i>
+                          </span>
+                        </button>
+                      </p>
+                    </div>
+                  </th>
+                </tr>
               </tbody>
             </table>
           </div>
