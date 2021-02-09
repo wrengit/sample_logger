@@ -16,55 +16,95 @@
       <div class="column">
         <form action="" class="box">
           <div class="field">
-            <label class="label">Sample description</label>
-            <div class="control">
+            <label class="label">Sample Description</label>
+            <div class="control has-icons-left">
               <input
                 class="input"
                 type="text"
                 placeholder="Enter the sample name and/or description"
               />
+              <span class="icon is-left">
+                <i class="fas fa-question"></i>
+              </span>
             </div>
           </div>
 
-          <div class="field">
-            <label class="label">Chemist Email</label>
-            <div class="control">
-              <input
-                type="email"
-                class="input"
-                placeholder="Example: first.last@veolia.com"
-              />
+          <div class="field is-grouped">
+            <div class="field-body">
+              <div class="field">
+                <label class="label">Chemist Email</label>
+                <div class="control has-icons-left">
+                  <input
+                    type="email"
+                    class="input"
+                    placeholder="Example: first.last@veolia.com"
+                  />
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-envelope"></i>
+                  </span>
+                </div>
+              </div>
+
+              <div class="field">
+                <div class="control">
+                  <label class="label">Received Date</label>
+                  <input
+                    type="date"
+                    class="input"
+                    placeholder="Example: first.last@veolia.com"
+                  />
+                </div>
+              </div>
             </div>
           </div>
 
-          <div class="field">
-            <label class="label">Customer / Sales Rep Name</label>
-            <div class="control">
-              <input
-                type="text"
-                class="input"
-                placeholder="Customer or Rep Name"
-              />
-            </div>
-          </div>
+          <div class="field is-grouped">
+            <div class="field-body">
+              <div class="field">
+                <label class="label">Customer Name</label>
+                <div class="control has-icons-left">
+                  <input
+                    type="text"
+                    class="input"
+                    placeholder="Customer or Rep Name"
+                  />
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-user"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">Customer Contact</label>
+                <div class="control has-icons-left">
+                  <input
+                    type="text"
+                    class="input"
+                    placeholder="Email or Phone Number"
+                  />
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-id-card"></i>
+                  </span>
+                </div>
 
-          <div class="field">
-            <label class="label">Date Received</label>
-            <div class="control">
-              <input type="date" class="input" />
+              </div>
             </div>
           </div>
 
           <div class="field">
             <label class="label">Test Required</label>
-            <div class="control">
-              <textarea
-                class="textarea"
-                placeholder="Detail testing required"
-              ></textarea>
+            <div class="control has-icons-left">
+              <input
+                type="text"
+                class="input"
+                placeholder="eg. pH, flash test"
+              />
+              <span class="icon is-small is-left">
+                <i class="fas fa-vial"></i>
+              </span>
             </div>
           </div>
-          
+
+
           <div class="field">
             <label class="label">Additional Info</label>
             <div class="control">
@@ -75,18 +115,23 @@
             </div>
           </div>
 
-          <div class="field">
+          <div class="field is-grouped">
             <div class="control">
-              <button class="button">Add Sample</button>
+              <button class="button is-success">Add Sample</button>
+            </div>
+            <div class="control">
+              <button class="button is-warning">Reset</button>
             </div>
           </div>
         </form>
       </div>
-
       <div class="column">
-        <h1>Hello</h1>
+        
       </div>
     </div>
+    <script
+      src="https://kit.fontawesome.com/51d7063a93.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.8.0/alpine.js"></script>
 </html>
