@@ -15,7 +15,7 @@
     <div class="columns is-centered">
       <div class="column is-half">
         <section class="section">
-          <form action="" class="box">
+          <form action="" class="box" id="myForm" onsubmit="handleFormSubmit(this)">
             <div class="field">
               <label class="label">Sample Description</label>
               <div class="control has-icons-left">
@@ -24,6 +24,7 @@
                   class="input"
                   type="text"
                   placeholder="Enter the sample name and/or description"
+                  id="name"
                 />
                 <span class="icon is-left has-text-info">
                   <i class="fas fa-question"></i>
@@ -41,6 +42,7 @@
                       type="email"
                       class="input"
                       placeholder="Example: first.last@veolia.com"
+                      id="email"
                     />
                     <span class="icon has-text-info is-small is-left">
                       <i class="fas fa-envelope"></i>
@@ -56,6 +58,7 @@
                       type="date"
                       class="input"
                       placeholder="Example: first.last@veolia.com"
+                      id="date"
                     />
                   </div>
                 </div>
@@ -72,6 +75,7 @@
                       type="text"
                       class="input"
                       placeholder="Customer or Rep Name"
+                      id="contactName"
                     />
                     <span class="icon has-text-info is-small is-left">
                       <i class="fas fa-user"></i>
@@ -85,6 +89,7 @@
                       type="text"
                       class="input"
                       placeholder="Email or Phone Number"
+                      id="contactPhone"
                     />
                     <span class="icon has-text-info is-small is-left">
                       <i class="fas fa-id-card"></i>
@@ -102,6 +107,7 @@
                   type="text"
                   class="input"
                   placeholder="eg. pH, flash test"
+                  id="testReq"
                 />
                 <span class="icon has-text-info is-small is-left">
                   <i class="fas fa-vial"></i>
@@ -109,22 +115,12 @@
               </div>
             </div>
 
-            <div class="field">
-              <label class="label">Additional Info</label>
-              <div class="control">
-                <textarea
-                  class="textarea"
-                  placeholder="Additional Information"
-                ></textarea>
-              </div>
-            </div>
-
             <div class="field is-grouped">
               <div class="control">
-                <button class="button is-success">Add Sample</button>
+                <button type="submit" class="button is-success">Add Sample</button>
               </div>
               <div class="control">
-                <button class="button is-warning">Reset</button>
+                <button type="reset" value="reset" class="button is-warning">Reset</button>
               </div>
             </div>
           </form>
